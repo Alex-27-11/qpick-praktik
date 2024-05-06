@@ -1,0 +1,15 @@
+@import "../../utils/mixins.scss";
+
+.mainPage {
+  @include flex-column-center;
+  padding-bottom: 20px;
+  min-height: 77vh;
+  &__container {
+  }
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    width: 100%;
+  }
+}

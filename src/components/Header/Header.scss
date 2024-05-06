@@ -1,0 +1,62 @@
+@import "../../utils/mixins.scss";
+
+.header {
+  @include flex-column-center;
+  margin-bottom: 28px;
+  &__container {
+  }
+  &__inner {
+    width: 100%;
+    @include flex-row-spBetween;
+    padding: 15px 15px 15px 0;
+  }
+  &__logo-link {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+  }
+  &__activity {
+    @include flex-row-spBetween;
+    gap: 40px;
+  }
+  &__heart {
+    position: relative;
+  }
+  &__heart-img {
+  }
+  &__heart-count {
+    position: absolute;
+    top: -9px;
+    right: -9px;
+    width: 17.5px;
+    height: 17.5px;
+    background: rgba(255, 165, 66, 1);
+    border-radius: 50%;
+    color: white;
+    display: grid;
+    place-items: center;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  &__basket {
+    position: relative;
+  }
+  &__basket-img {
+  }
+  &__basket-count {
+    position: absolute;
+    top: -7px;
+    right: -9px;
+    width: 17.5px;
+    height: 17.5px;
+    background: rgba(255, 165, 66, 1);
+    border-radius: 50%;
+    color: white;
+    display: grid;
+    place-items: center;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+  }
+}

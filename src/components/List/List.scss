@@ -1,0 +1,16 @@
+.list {
+  &__inner {
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24.38px;
+    color: rgba(131, 131, 131, 1);
+    margin-bottom: 20px;
+  }
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+}

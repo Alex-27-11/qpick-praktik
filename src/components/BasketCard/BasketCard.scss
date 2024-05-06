@@ -1,0 +1,71 @@
+@import "../../utils/mixins.scss";
+
+.basketCard {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  padding: 18px 28px 15px 18px;
+  &__inner {
+    display: flex;
+  }
+  &__leftColumn {
+    margin-right: 23px;
+  }
+  &__imgBox {
+    width: 146px;
+    margin-bottom: 10px;
+  }
+  &__img {
+  }
+  &__contBox {
+    display: flex;
+    @include flex-row-spBetween;
+    max-width: 118px;
+    margin: 0 auto;
+  }
+  &__buttonPlus {
+  }
+  &__imgPlus {
+  }
+  &__count {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 20.7px;
+  }
+  &__buttonMinus {
+  }
+  &__imgMinus {
+  }
+  &__midColumn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20.7px;
+    margin-bottom: 10px;
+  }
+  &__price {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(170, 170, 170, 1);
+  }
+  &__rightColumn {
+    @include flex-column-spBetween;
+    min-width: 70px;
+  }
+  &__buttonDelete {
+    align-self: flex-end;
+  }
+  &__imgDelete {
+  }
+  &__total {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+  }
+}

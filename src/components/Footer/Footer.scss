@@ -1,0 +1,77 @@
+@import "../../utils/mixins.scss";
+
+.footer {
+  @include flex-column-center;
+  &__container {
+  }
+  &__inner {
+    width: 100%;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 30px 30px 0 0;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 560px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+  &__columnLogo {
+  }
+  &__logo {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+  }
+  &__columnMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+  }
+  &__columnMenu-item {
+    line-height: 20.7px;
+  }
+  &__columnLangs {
+    @include flex-column-spBetween;
+    align-items: flex-start;
+    @media (max-width: 560px) {
+      gap: 10px;
+    }
+  }
+  &__service {
+    line-height: 20.7px;
+  }
+  &__langs {
+    display: flex;
+    gap: 17px;
+    @media (max-width: 560px) {
+      align-self: center;
+    }
+  }
+  &__langs-button {
+  }
+  &__langs-button-img {
+  }
+  &__lang {
+    font-weight: 500;
+    line-height: 18px;
+    color: rgba(16, 16, 16, 1);
+    &:hover {
+      color: rgba(255, 165, 66, 1);
+    }
+  }
+  &__columnSocials {
+    @include flex-row-center;
+    align-self: start;
+    gap: 18px;
+    @media (max-width: 560px) {
+      align-self: center;
+    }
+  }
+  &__social {
+  }
+  &__social-img {
+  }
+}
